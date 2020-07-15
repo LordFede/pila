@@ -6,6 +6,7 @@ public class Main {
 		
 		Pila miaPila = new Pila(7);
 		
+		
 		miaPila.delete();
 		
 		System.out.println();
@@ -32,6 +33,18 @@ public class Main {
 		
 		System.out.println();
 		miaPila.insert(45);
+		
+		System.out.println();
+		miaPila.stamp();
+		
+		miaPila.insertQueue(100);
+		
+		System.out.println();
+		miaPila.stamp();
+		
+		miaPila.delete();
+		miaPila.delete();
+		miaPila.delete();
 		
 		System.out.println();
 		miaPila.stamp();
