@@ -36,6 +36,18 @@ public class Pila {
 			System.out.println(i + " - " + pila[i]);
 		}
 	}
+	
+	public void insertQueue(int a) {
+		if (indice < cells) {
+			for (int i=indice; i>=0; i--) {
+				pila[indice] = pila[indice - 1];
+			}
+			pila[0] = a;
+			indice++;
+		}else {
+			System.out.println("La pila è piena");
+		}
+	}
 }
 
 
